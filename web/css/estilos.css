@@ -1,0 +1,60 @@
+
+.color-navbar {
+    background-color: #353a40;
+}
+
+.color-navbar-text {
+    color: #989d97;
+}
+
+.nav-link {
+    color: #989d97 !important;
+}
+
+.nav-link:hover {
+    color: #29a744 !important;
+}
+
+.nav-item .active,
+.navbar-brand {
+    color: white !important;
+}
+
+.bg-verde {
+    background-color: #96c93e !important;
+    border-color: #96c93e !important;
+}
+
+.header-principal {
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../img/hawaii-reducido.jpg") !important;
+}
+
+header.header-form {
+    background-image: none !important;
+}
+
+.overlay {
+    background: rgb(0, 0, 0, 0.4);
+    overflow: hidden;
+    height:100%;
+}
+
+#texto-overlay{
+    padding-top: 10%;
+    padding-right: 5%;
+}
+
+#texto-overlay h1.card-title{    
+    font-size: 4vw;
+}
+
+#texto-overlay p.card-text{
+    font-size: 1.6vw;
+}
+
+.total{
+    padding: 10px;
+}
+  
