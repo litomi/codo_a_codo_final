@@ -4,21 +4,40 @@
     Author     : Lisandro
 --%>
 
+
 <!-- Cabeza -->
 <%@include file="./vistas/parciales/header.jsp" %>
 
+
 <!-- Cuerpo -->
-<% if(request.getParameter("page") == null){ %>
-<%@include file="./vistas/parciales/cartel.jsp" %>
-<%@include file="./vistas/parciales/cuerpo.jsp" %>
 
+<%
+    String param = request.getParameter("page");
+    param = (param != null) ? param : "";
 
-<% }else { %>
-
+    switch (param) {
+        case "form_venta": {%>
 <%@include file="./vistas/parciales/formulario_ticket.jsp" %>
+<% }
+        break;
+        case "form_orador": {%>
+<%@include file="./vistas/parciales/formulario_orador.jsp" %>
+<%}
+    break;
+    case "tabla_tickets": {%>
+<%@include file="./vistas/parciales/tabla_tickets.jsp" %>
+<%   }
+    break;
+    case "tabla_oradores": {%>
+<%@include file="./vistas/parciales/tabla_oradores.jsp" %>
+<%  }
+    break;
+    default: {%>
+<%@include file="./vistas/parciales/cartel.jsp" %>
+<% }
+    }%>
 
 
-<% }%>
 
 <!-- Pie -->
 <%@include file="./vistas/parciales/footer.jsp" %>

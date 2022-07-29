@@ -38,16 +38,17 @@
                             <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Los oradores</a>
+                            <a class="nav-link" href="<%= request.getRequestURI() %>?page=tabla_oradores#formulario-oradores">Los oradores</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="<%= request.getRequestURI() %>?page=form_orador#formulario-oradores">Conviérte en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                            <a class="nav-link" href="<%= request.getRequestURI() %>?page=form_venta#formulario-tickets" >Comprar tickets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<%= request.getRequestURI() %>#formulario-oradores">Conviérte en orador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<%= request.getRequestURI() %>?page=form#formulario-tickets" >Comprar tickets</a>
+                            <a class="nav-link" href="<%= request.getRequestURI() %>?page=tabla_tickets">Inscriptos</a>
                         </li>
                     </ul>
                 </div>
